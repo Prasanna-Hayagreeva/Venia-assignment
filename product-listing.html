@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Listing</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <header class="primary-brand">
+      <div class="sticky primary-brand">
+        <div class="nav-wrapper sectioncontainer">
+          <div class="hambuger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="side-menu" class="side-menu">
+            <a href="/">Home</a>
+            <a href="product-listing.html" class="active">Women</a>
+            <a href="product-listing.html">Men</a>
+            <a href="product-listing.html">Eletronics</a>
+            <a href="product-listing.html">Jewellery</a>
+          </div>
+          <div class="logo vertical-align-center">
+            <a href="/">
+              <a href="/">
+                <img src="./assets/images/logo.jpg" alt="logo" />
+              </a>
+            </a>
+          </div>
+          <nav>
+            <a href="/">Home</a>
+            <a href="product-listing.html" class="active">Women</a>
+            <a href="product-listing.html">Men</a>
+            <a href="product-listing.html">Eletronics</a>
+            <a href="product-listing.html">Jewellery</a>
+          </nav>
+          <div class="cart vertical-align-center">
+            <img src="./assets/images/cart-icon.jpg" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero-banner product-listing">
+      <div class="left-side-banner">
+        <div class="banner-content">
+          <h1>Men’s Outerwear</h1>
+          <div class="section-ender mt-65"></div>
+        </div>
+      </div>
+      <div class="right-side-banner"></div>
+    </div>
+    <div class="sectioncontainer">
+      <div class="product-listing-wrapper">
+        <div class="product-filters">
+          <ul class="breadcrubs">
+            <li><a href="#">clothing</a></li>
+            <li><a href="#">Women’s</a></li>
+            <li><a class="active">Outerwear</a></li>
+          </ul>
+          <div class="filter-section desktop-show">
+            <div class="filter-label">Filters</div>
+            <div class="categories">
+              <div class="category-label mb-16">Categories</div>
+              <div class="categories-checkbox">
+                <!-- <span><input type="checkbox" name="categories-filter" value="jewellery"><label>jewellery</label></span>
+                        <span><input type="checkbox" name="categories-filter" value="eletronics"><label>Eletronics</label></span>
+                        <span><input type="checkbox" name="categories-filter" value="mens-clothing"><label>Men's Clothing</label></span>
+                        <span><input type="checkbox" name="categories-filter" value="womens-clothing"><label>Women's Clothing</label></span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-showcase-wrapper">
+          <div class="product-showcase-top-section">
+            <div class="mobile-show" onclick="togglefilter()">
+              <div class="product-category-filter">
+                <img src="./assets/images/filter-icon.jpg" alt="filter-icon" />
+                <span>Filter Results</span>
+              </div>
+            </div>
+            <div id="side-filter" class="side-filter mobile-show">
+              <div class="closewrapper">
+                <span>Filter</span>
+                <span
+                  ><button class="close-btn" onclick="closeMenu()">
+                    ✖
+                  </button></span
+                >
+              </div>
+              <div class="mobile-show clear-all">
+                <a onclick="closeMenu()">Clear all </a>
+              </div>
+              <div class="categories">
+                <div class="category-label mb-16">Categories</div>
+                <div class="categories-checkbox">
+                  <span
+                    ><input
+                      type="checkbox"
+                      name="categories-filter"
+                      value="jewellery"
+                    /><label>jewellery</label></span
+                  >
+                  <span
+                    ><input
+                      type="checkbox"
+                      name="categories-filter"
+                      value="eletronics"
+                    /><label>Eletronics</label></span
+                  >
+                  <span
+                    ><input
+                      type="checkbox"
+                      name="categories-filter"
+                      value="mens-clothing"
+                    /><label>Men's Clothing</label></span
+                  >
+                  <span
+                    ><input
+                      type="checkbox"
+                      name="categories-filter"
+                      value="womens-clothing"
+                    /><label>Women's Clothing</label></span
+                  >
+                </div>
+              </div>
+              <a href="#" class="banner-cta"
+                >SEE <span class="result-count"></span> Result</a
+              >
+            </div>
+            <div class="result-found">
+              <span class="result-count"> 0 </span>
+              <span class="result-text">Results</span>
+            </div>
+            <div class="search-bar w-50p">
+              <div class="form-field">
+                <input
+                  type="text"
+                  id="product-search"
+                  placeholder="Search for products..."
+                />
+              </div>
+            </div>
+            <div class="product-sort-filter desktop-show">
+              <select>
+                <option value="sort-by-price">sort by price</option>
+                <option value="price-low-high">Price : low to high</option>
+                <option value="price-high-low">Price : high to low</option>
+              </select>
+            </div>
+          </div>
+          <!-- <div class="product-listing-cards-wrapper">
+                <div class="product-listing-card">
+                        <img class="product-card-img"
+                          src="./managed-assets/images/home-cat-blocks/shop-women.jpg"
+                          alt="shop-women"
+                        />
+                        <div class="card-details  mt-11">
+                          <h2 class="product-card-name">Varsity Eco-friendly Jacket</h2>
+                          <p class="product-card-price">$110.00</p>
+                            <svg class="heart" id="heartIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </div>
+                </div>
+                <div class="product-listing-card">
+                    <img class="product-card-img"
+                      src="./managed-assets/images/home-cat-blocks/shop-women.jpg"
+                      alt="shop-women"
+                    />
+                    <div class="card-details  mt-11">
+                      <h2 class="product-card-name">Varsity Eco-friendly Jacket</h2>
+                      <p class="product-card-price">$110.00</p>
+                      <svg class="heart" id="heartIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    </div>
+            </div>
+            <div class="product-listing-card">
+                <img class="product-card-img"
+                  src="./managed-assets/images/home-cat-blocks/shop-women.jpg"
+                  alt="shop-women"
+                />
+                <div class="card-details  mt-11">
+                  <h2 class="product-card-name">Varsity Eco-friendly Jacket</h2>
+                  <p class="product-card-price">$110.00</p>
+                  <svg class="heart" id="heartIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                </div>
+        </div>
+        <div class="product-listing-card">
+            <img class="product-card-img"
+              src="./managed-assets/images/home-cat-blocks/shop-women.jpg"
+              alt="shop-women"
+            />
+            <div class="card-details  mt-11">
+              <h2 class="product-card-name">Varsity Eco-friendly Jacket</h2>
+              <p class="product-card-price">$110.00</p>
+              <svg class="heart" id="heartIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            </div>
+        </div>
+
+            </div>-->
+          <!-- above is static data -->
+          <!-- json result -->
+          <div class="product-listing-cards-wrapper" id="product-listing"></div>
+          <h2 id="error-message" class="error-message" style="display: none">
+            Oops..! something went wrong.<br />Please try again later.
+          </h2>
+          <div class="load-more-btn-wrapper m-auto">
+            <button id="load-more-btn" class="banner-cta mt-24">
+              Load More
+            </button>
+          </div>
+          <!-- json result -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-top">
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Follow Us!</a></li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </li>
+            </ul>
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-bottom">
+          <div class="footer-col">
+            <img src="./assets/images/logo-footer.jpg" alt="footer logo" />
+          </div>
+          <div class="footer-col">
+            <p>© Company Name Address Ave, City Name, State ZIP</p>
+          </div>
+          <div class="footer-col">
+            <ul class="t-and-c">
+              <li><a href="#"> Terms of Use </a></li>
+              <li><a href="#"> Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browser-update.org/">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/products.js"></script>
+  </body>
+</html>

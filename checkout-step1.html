@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Checkout</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <header class="primary-brand">
+      <div class="sticky primary-brand">
+        <div class="nav-wrapper sectioncontainer">
+          <div class="hambuger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="side-menu" class="side-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Eletronics</a>
+            <a href="#">Jewellery</a>
+          </div>
+          <div class="logo vertical-align-center">
+            <a href="/"> <img src="./assets/images/logo.jpg" alt="logo" /> </a>
+          </div>
+          <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Eletronics</a>
+            <a href="#">Jewellery</a>
+          </nav>
+          <div class="cart vertical-align-center">
+            <img src="./assets/images/cart-icon.jpg" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sectioncontainer">
+      <h1 class="section-title">Checkout</h1>
+      <div class="section-ender"></div>
+      <div class="checkout-wrapper">
+        <div class="left-section">
+          <div class="checkout-form-wrapper">
+            <form action="checkout-step2.html">
+              <h2 class="form-heading">Guest Checkout</h2>
+              <div class="form-section">
+                <h3>Contact information</h3>
+                <p>
+                  We’ll use these details to keep you informed on your delivery.
+                </p>
+              </div>
+              <div class="form-fields-wrapper">
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="Email"
+                    name="Email"
+                    placeholder="abc@xyz.com"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    placeholder="(222) 222-2222"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="sub-heading mt-40">
+                <h3>1. Shipping Information</h3>
+              </div>
+              <div class="form-fields-wrapper">
+                <div class="form-field">
+                  <label for="email">Country</label>
+                  <select id="country" name="country" required>
+                    <option value="us" selected>United States</option>
+                    <option value="india">India</option>
+                    <option value="japan">Japan</option>
+                    <option value="uk">UK</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-fields-wrapper">
+                <div class="form-field">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="fname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-fields-wrapper">
+                <div class="form-field">
+                  <label for="address1">Street Address </label>
+                  <input
+                    type="text"
+                    id="address1"
+                    name="address1"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="address2">Street Address 2</label>
+                  <small> Optional </small>
+                  <input
+                    type="text"
+                    id="address2"
+                    name="address2"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-fields-wrapper">
+                <div class="w-50">
+                  <div class="form-fields-wrapper">
+                    <div class="form-field">
+                      <label for="city">City</label>
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder=""
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="form-fields-wrapper">
+                    <div class="form-field">
+                      <label for="state">State</label>
+                      <select id="state" name="state" required>
+                        <option value="maharashtra" selected>
+                          Maharashtra
+                        </option>
+                        <option value="delhi">Delhi</option>
+                        <option value="karntaka">Karntaka</option>
+                        <option value="chennai">Chennai</option>
+                      </select>
+                    </div>
+                    <div class="form-field">
+                      <label for="zip">ZIP</label>
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        placeholder="91001"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-show">
+                <div class="form-fields-wrapper mt-40">
+                  <input
+                    class="banner-cta banner-cta-white"
+                    type="submit"
+                    value="CONTINUE TO SHIPPING METHOD "
+                  />
+                </div>
+              </div>
+              <div class="form-fields-wrapper mt-40 mobile-show">
+                <input
+                  class="banner-cta banner-cta-white"
+                  type="submit"
+                  value="CONTINUE"
+                />
+              </div>
+            </form>
+            <div class="checkout-details">
+              <ul>
+                <li class="row">
+                  <h2 class="row-title">2. Shipping Method</h2>
+                </li>
+                <li class="row">
+                  <h2 class="row-title">3. Payment Information</h2>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="pricing-summery">
+            <ul class="express-checkout-cta">
+              <li>
+                Sign in for Express Checkout
+                <a href="#" class="banner-cta banner-cta-white"> SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-summery">
+            <ul>
+              <li>
+                <h3 class="product-name">Pricing Summary</h3>
+              </li>
+              <li>
+                <p class="row-title">Subtotal</p>
+                <p class="row-desc">$ 388.00</p>
+              </li>
+              <li>
+                <p class="row-title">Coupon</p>
+                <p class="row-desc">- $ 77.60</p>
+              </li>
+              <li>
+                <p class="row-title">Gift Card</p>
+                <p class="row-desc">- $ 100.00</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated tax</p>
+                <p class="row-desc">$ 23.28</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated shipping</p>
+                <p class="row-desc">FREE</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated Total</p>
+                <p class="row-desc">$ 233.68</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-top">
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Follow Us!</a></li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </li>
+            </ul>
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-bottom">
+          <div class="footer-col">
+            <img src="./assets/images/logo-footer.jpg" alt="footer logo" />
+          </div>
+          <div class="footer-col">
+            <p>© Company Name Address Ave, City Name, State ZIP</p>
+          </div>
+          <div class="footer-col">
+            <ul class="t-and-c">
+              <li><a href="#"> Terms of Use </a></li>
+              <li><a href="#"> Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browser-update.org/">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

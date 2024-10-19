@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Shopping Bag</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <header class="primary-brand">
+      <div class="sticky primary-brand">
+        <div class="nav-wrapper sectioncontainer">
+          <div class="hambuger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="side-menu" class="side-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Eletronics</a>
+            <a href="#">Jewellery</a>
+          </div>
+          <div class="logo vertical-align-center">
+            <img src="./assets/images/logo.jpg" alt="logo" />
+          </div>
+          <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Eletronics</a>
+            <a href="#">Jewellery</a>
+          </nav>
+          <div class="cart vertical-align-center">
+            <img src="./assets/images/cart-icon.jpg" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sectioncontainer">
+      <h1 class="section-title">Your Shopping Bag</h1>
+      <div class="section-ender"></div>
+      <div class="shopping-bag-wrapper">
+        <div class="left-section">
+          <div class="shopping-cart-wrapper">
+            <div class="shopping-item">
+              <div class="shopping-thumb">
+                <img
+                  src="./assets/images/shopping-item1.jpg"
+                  alt="shopping-item"
+                />
+              </div>
+              <div class="stack-container">
+                <div class="item-details">
+                  <div class="item-name">Electric Leggings</div>
+                  <div class="item-size">
+                    <span class="size-label">Size : </span>Medium
+                  </div>
+                  <div class="item-color">
+                    <span class="color-label">Color : </span>Storm
+                  </div>
+                  <div class="item-price">
+                    <span class="color-label">$</span>145.00
+                  </div>
+                </div>
+                <div class="item-quantity">
+                  <div class="quantity-selector">
+                    <button class="btn minus">-</button>
+                    <input
+                      type="text"
+                      class="quantity-input"
+                      value="2"
+                      min="2"
+                    />
+                    <button class="btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-modify">
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <img
+                      src="./assets/images/item-modify-pen.jpg"
+                      alt="item remove"
+                    />
+                  </div>
+                  <div class="item-modify-label"><a href="#">Edit item</a></div>
+                </div>
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <img
+                      src="./assets/images/item-modify-bin.jpg"
+                      alt="item remove"
+                    />
+                  </div>
+                  <div class="item-modify-label"><a href="#">Remove</a></div>
+                </div>
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <svg
+                      class="heart"
+                      id="heartIcon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="item-modify-label">
+                    <a href="#">Save for later</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shopping-item">
+              <div class="shopping-thumb">
+                <img
+                  src="./assets/images/shopping-item2.jpg"
+                  alt="shopping-item"
+                />
+              </div>
+              <div class="stack-container">
+                <div class="item-details">
+                  <div class="item-name">Signature Sports Bra</div>
+                  <div class="item-size">
+                    <span class="size-label">Size : </span>Medium
+                  </div>
+                  <div class="item-color">
+                    <span class="color-label">Color : </span>Red
+                  </div>
+                  <div class="item-price">
+                    <span class="color-label">$</span>98.00
+                  </div>
+                </div>
+                <div class="item-quantity">
+                  <div class="quantity-selector">
+                    <button class="btn minus">-</button>
+                    <input
+                      type="text"
+                      class="quantity-input"
+                      value="1"
+                      min="1"
+                    />
+                    <button class="btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-modify">
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <img
+                      src="./assets/images/item-modify-pen.jpg"
+                      alt="item remove"
+                    />
+                  </div>
+                  <div class="item-modify-label"><a href="#">Edit item</a></div>
+                </div>
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <img
+                      src="./assets/images/item-modify-bin.jpg"
+                      alt="item remove"
+                    />
+                  </div>
+                  <div class="item-modify-label"><a href="#">Remove</a></div>
+                </div>
+                <div class="row">
+                  <div class="item-modify-icon">
+                    <svg
+                      class="heart"
+                      id="heartIcon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="item-modify-label">
+                    <a href="#">Save for later</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shopping-bag-details">
+              <ul>
+                <li class="row">
+                  <h2 class="row-title">Estimate your Shipping</h2>
+                  <div class="right-side">
+                    <p class="row-desc">Shipping to 91001</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </li>
+                <li class="row">
+                  <h2 class="row-title">Enter a Coupon Code</h2>
+                  <div class="right-side">
+                    <p class="row-desc">20% discount applied</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </li>
+                <li class="row">
+                  <h2 class="row-title">Enter a Coupon Code</h2>
+                  <div class="right-side">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="pricing-summery">
+            <ul>
+              <li>
+                <h3 class="product-name">Pricing Summary</h3>
+              </li>
+              <li>
+                <p class="row-title">Subtotal</p>
+                <p class="row-desc">$ 388.00</p>
+              </li>
+              <li>
+                <p class="row-title">Coupon</p>
+                <p class="row-desc">- $ 77.60</p>
+              </li>
+              <li>
+                <p class="row-title">Gift Card</p>
+                <p class="row-desc">- $ 100.00</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated tax</p>
+                <p class="row-desc">$ 23.28</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated shipping</p>
+                <p class="row-desc">FREE</p>
+              </li>
+              <li>
+                <p class="row-title">Estimated Total</p>
+                <p class="row-desc">$ 233.68</p>
+              </li>
+
+              <li class="flex-horizontal-center mt-40">
+                <a href="checkout-step1.html" class="banner-cta">
+                  <svg
+                    style="margin-right: 8px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Lock body, wider than the shackle -->
+                    <rect x="4" y="11" width="16" height="10" rx="2" ry="2" />
+                    <!-- Lock shackle, narrower than the body -->
+                    <path d="M8 11V7a4 4 0 1 1 8 0v4" />
+                  </svg>
+                  CHECKOUT</a
+                >
+              </li>
+
+              <li class="flex-horizontal-center">
+                <a href="#" class="banner-cta paypal"
+                  ><img src="./assets/images/paypal.png" alt="paypal"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-top">
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">Follow Us!</a></li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </li>
+            </ul>
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer sectioncontainer">
+        <div class="footer-bottom">
+          <div class="footer-col">
+            <img src="./assets/images/logo-footer.jpg" alt="footer logo" />
+          </div>
+          <div class="footer-col">
+            <p>© Company Name Address Ave, City Name, State ZIP</p>
+          </div>
+          <div class="footer-col">
+            <ul class="t-and-c">
+              <li><a href="#"> Terms of Use </a></li>
+              <li><a href="#"> Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browser-update.org/">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/products.js"></script>
+  </body>
+</html>
